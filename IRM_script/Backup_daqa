@@ -1,0 +1,28 @@
+echo off   
+cd /bin    
+bash
+rm -f /usr/g/insite/tmp/DAQA_save*.*
+echo SAVE DATA
+tar --atime-preserve -cvpf /usr/g/insite/tmp/DAQA_save.tar.gz  /export/home/signa/tools/DAQA/data/*.DAQA
+
+echo SAVE DAQA IMAGES
+tar --atime-preserve -rvpf /usr/g/insite/tmp/DAQA_save.tar.gz /export/home/signa/tools/DQA_tool/*.*
+
+echo SAVE NEW PARAMETERS
+tar --atime-preserve -rvpf /usr/g/insite/tmp/DAQA_save.tar.gz /usr/g/caldir/DQAIsoZcal.dat 
+tar --atime-preserve -rvpf /usr/g/insite/tmp/DAQA_save.tar.gz /usr/g/caldir/DQAGradcal.dat
+
+gzip  /usr/g/insite/tmp/DAQA_save.tar.gz
+
+echo rename file
+mv /usr/g/insite/tmp/DAQA_save.tar.gz  "/usr/g/insite/tmp/DAQA_save_`grep ServiceID /usr/g/insite/sclink.cfg | sed s/ServiceID=//``date "+_%b.%d_%H.%M"`.gz"
+
+echo copy to usb stick
+df | grep mnt > /usr/g/insite/tmp/p1.t
+read -r -d '' str9 < <(cut -c49-65 /usr/g/insite/tmp/p1.t)
+rm /usr/g/insite/tmp/p1.t
+cp  /usr/g/insite/tmp/DAQA_save_*.gz $str9 
+
+
+
+echo BACKUP DAQA done and saved on USB stick 
