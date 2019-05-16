@@ -133,7 +133,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
@@ -265,7 +265,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw1"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestination4S4 = ""/g' $file
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
@@ -396,7 +396,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw1"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestination4S4 = ""/g' $file
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
@@ -540,7 +540,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw1"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestination4S4 = ""/g' $file
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
@@ -672,7 +672,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw1"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestination4S4 = ""/g' $file
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
@@ -804,7 +804,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw1"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestination4S4 = ""/g' $file
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
@@ -938,7 +938,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw1"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestination4S4 = ""/g' $file
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
@@ -1071,7 +1071,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw1"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestination4S4 = ""/g' $file
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
@@ -1203,7 +1203,7 @@ LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw1"/autoTransferDestinatio
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "adw2"/autoTransferDestination4S4 = ""/g' $file
 LC_ALL=C sed -i '' 's/autoTransferDestination4S4 = "aws"/autoTransferDestination4S4 = ""/g' $file
 
-sh 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
+bash 4lines.bash <$file> tmpfile_$file   # "4lines.bash" is a script to eliminate the following structure to avoid duplicate image sendingto the same host
 # the structure is in my case :
 #AutoXferHostInfo {
 #autoXferHostName = "AWS"
