@@ -1,7 +1,7 @@
 # Some tricks
 
 
-## Remote host change command Scanner
+## How to change host in command line
 
 Retrieve proto files locally or connect remotely to the scanner
 
