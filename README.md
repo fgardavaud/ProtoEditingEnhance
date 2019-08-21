@@ -13,8 +13,10 @@ Then I highlly recommend you to save those files in a safe place.
 ## Code langage & OS platform
 
 This code have been developped in bash/shell langage and adapted on macOS platform.
-The code have been exhaustively commented, as you can understand the function of every code block. If not you can e-mail me. I will try to support you.
 **You will have to adapt some command**, such as to sed, to another OS platform such as Windows or Linux.
+
+
+The code have been exhaustively commented, as you can understand the function of every code block. If not you can e-mail me. I will try to support you.
 
 -----
 
