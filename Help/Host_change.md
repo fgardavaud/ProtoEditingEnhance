@@ -1,15 +1,8 @@
-# Some tricks
+# How to change host in command line
 
+Retrieve proto files locally on your computed by doing a *save state* operation or connect remotely to the scanner thanks telnet or ssh method if you have acces to root password.
 
-## How to change host in command line
-
-Retrieve proto files locally or connect remotely to the scanner
-
-
-On the scanner proceed as follows:
-
-
-On **Mac** only, open a terminal and enter the following command:
+On **Mac** only, open a terminal, go to the path of .proto file, and enter the following command:
 ```
 sed -i '' 's/srSeriesAutoTransferDestination2 = ""/srSeriesAutoTransferDestination2 = "AWS"/g' /Users/francoisgardavaud/Desktop/service_mod_data/system_state/abdomen_*.proto
 ```
@@ -28,4 +21,8 @@ Another solution is to ignore the encoding problem by the following command line
 ```
 **LC_CTYPE=C** sed -i '' 's/srSeriesAutoTransferDestination2 = ""/srSeriesAutoTransferDestination2 = "AWS"/g' /Users/francoisgardavaud/Desktop/service_mod_data/system_state/abdomen_*.proto
 ```
+
+----
+
+Be carreful with great power come great responsability !
 
