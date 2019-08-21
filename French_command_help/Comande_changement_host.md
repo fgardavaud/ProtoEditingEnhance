@@ -1,30 +1,30 @@
-# pour mes compatriotes français
+# Some tricks
 
 
-## Commande changement hôte distant Scanner
+## Remote host change command Scanner
 
-Récupérer les fichiers proto en local ou se connecter à distance sur le scanner
-
-
-Sur le scanner procéder comme suit :
+Retrieve proto files locally or connect remotely to the scanner
 
 
-Sur **Mac** seulement, ouvrir un terminal et rentrer la commande suivante :
+On the scanner proceed as follows:
+
+
+On **Mac** only, open a terminal and enter the following command:
 ```
 sed -i '' 's/srSeriesAutoTransferDestination2 = ""/srSeriesAutoTransferDestination2 = "AWS"/g' /Users/francoisgardavaud/Desktop/service_mod_data/system_state/abdomen_*.proto
 ```
-*sur les autres systèmes d'exploitation vous devez adapté la commande sed à votre plateforme*
+*on other operating systems you must adapt the sed command to your platform*
 
 
-Le champs "" se transformera en champs "AWS"
+The "" field will change to "AWS" fields
 
-Si la commande ne fonctionne pas sur certains fichiers il s'agit certainement d'un problème d'encodage ASCII. Une solution consiste à utiliser cette ligne de commande
+If the command does not work on some files, it is certainly an ASCII encoding problem. One solution is to use this command line
 ```
 **LC_ALL=C** sed -i '' 's/srSeriesAutoTransferDestination2 = ""/srSeriesAutoTransferDestination2 = "AWS"/g' /Users/francoisgardavaud/Desktop/service_mod_data/system_state/abdomen_*.proto
 ```
-**Attention : les fichiers seront réencodés et les caractères hors système (comme les accents) ne seront plus ris en compte.**
+**Warning: files will be re-encoded and out-of-system characters (such as accents) will no longer be reckoned.
 
-Une autre solution consiste à ignorer le problème d'encodage par la ligne de commande suivante :
+Another solution is to ignore the encoding problem by the following command line:
 ```
 **LC_CTYPE=C** sed -i '' 's/srSeriesAutoTransferDestination2 = ""/srSeriesAutoTransferDestination2 = "AWS"/g' /Users/francoisgardavaud/Desktop/service_mod_data/system_state/abdomen_*.proto
 ```
