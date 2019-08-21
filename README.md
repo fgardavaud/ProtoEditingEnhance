@@ -4,12 +4,12 @@
 This code has been tested in GE CT platform such as CT750HD and Revo HD GSI. 
 Old VCT platform could be ok as the structure of system files 
 
-** This code won't work on new Revolution CT or Revolution Frontier platform ** as the structure of the system file to design the CT protocols have changed
+**This code won't work on new Revolution CT or Revolution Frontier platform** as the structure of the system file to design the CT protocols have changed
 
 ## Code langage & OS platform
 
 This code have been developped in bash/shell langage and adapted on macOS platform.
-You will have to adapt some command such as to sed to another OS platform such as Windows or Linux.
+**You will have to adapt some command**, such as to sed, to another OS platform such as Windows or Linux.
 
 ## Set up your CT environment
 If you want to contribute to this project, I recommend you to first extract your profile system files (.proto file) by doing a *full save state* operation.
