@@ -1,5 +1,7 @@
 #!/bin/sh
-#test tototatatiti
+
+
+# test edition
 # author : Francois Gardavaud
 # version date : 16-05-2019
 # purpose : script to avoid dupplicate transfert on the same distant host
